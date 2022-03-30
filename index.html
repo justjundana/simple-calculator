@@ -4,13 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
-<body>
+<body class="bg-gray-800 container mx-auto">
+    <section
+        class="mx-auto lg:w-2/6 md:w-3/6 sm:w-4/6 center h-auto bg-slate-100 my-14 rounded-xl shadow-lg px-10 pt-16 pb-8">
+        <header>
+            <h1 class="text-3xl font-semibold ">Calculator</h1>
+        </header>
 
-    <script src="script.js"></script>
+        <main class="pt-28">
+            <div class="flex flex-wrap justify-center">
+                <!-- Simple Calculator -->
+                <div class="w-5/12 m-2">
+                    <a href="simple-calculator/simple-calculator.html">
+                        <div class="border rounded shadow p-2">
+                            <div class="flex flex-row items-center">
+                                <div class="w-full flex justify-center">
+                                    <div class="flex-col flex items-center">
+                                        <img class="h-24" src="assets/img/simple-calculator.webp"
+                                            alt="simple-calculator">
+                                        <p class="text-center text-xs font-light text-gray-800">Simple Calculator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="pt-10 flex justify-center">
+            <h1 class="text-sm font-thin text-center">Made With love by Jundana</h1>
+        </footer>
+    </section>
+
 </body>
 
 </html>
