@@ -55,10 +55,10 @@ const calculate = () => {
     let result = 0;
    
     currentNumber = 
-        (calculationOperator === '+') ? result = prevNumber + currentNumber :
-        (calculationOperator === '-') ? result = prevNumber - currentNumber :
-        (calculationOperator === '*') ? result = prevNumber * currentNumber :
-        (calculationOperator === '/') ? result = prevNumber / currentNumber : 
+        (calculationOperator === '+') ? result = parseFloat(prevNumber) + parseFloat(currentNumber) :
+        (calculationOperator === '-') ? result = parseFloat(prevNumber) - parseFloat(currentNumber) :
+        (calculationOperator === '*') ? result = parseFloat(prevNumber) * parseFloat(currentNumber) :
+        (calculationOperator === '/') ? result = parseFloat(prevNumber) / parseFloat(currentNumber) : 
         (calculationOperator === '^') ? result = Math.pow(prevNumber, currentNumber) :
         0 ;
 }
